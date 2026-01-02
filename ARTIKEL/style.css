@@ -1,0 +1,50 @@
+header h1{
+	text-align: center;
+}
+body{
+	background: #f4f1ea;
+	color: #222;
+	font-family: "times new roman",serif;
+}
+.container{
+	background: #;
+}
+#PARAGRAF{
+	text-align: right;
+}
+#loading {
+    background:#000000;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    color: white;
+}
+
+.spinner {
+
+    width: 50px;
+    height: 50px;
+    border: 6px solid #ddd;
+    border-top: 6px solid #e30613;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* CONTENT */
+#content {
+    display: none;
+    text-align: center;
+    padding: 50px;
+}
+

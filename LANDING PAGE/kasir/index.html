@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kasir Digital Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loading">
+        <div class="spinner"></div>
+        <p>memuat kasir</p>
+    </div>
+
+
+
+<h1>Kasir Digital</h1>
+
+<p><mark>!perhatian,</mark> pada percobaan gratis adalah versi beta yang mana fitur yang di berikan tidak lengkap hehe</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Produk</th>
+            <th>Harga</th>
+            <th>Jumlah</th>
+        </tr>
+    </thead>
+    <tbody id="produk">
+        <tr>
+            <td>Beras 5 Kg</td>
+            <td>60000</td>
+            <td><input type="number" min="0" value="0"></td>
+        </tr>
+        <tr>
+            <td>Minyak Goreng</td>
+            <td>18000</td>
+            <td><input type="number" min="0" value="0"></td>
+        </tr>
+        <tr>
+            <td>Gula Pasir</td>
+            <td>15000</td>
+            <td><input type="number" min="0" value="0"></td>
+        </tr>
+        <tr>
+            <td>Susu UHT</td>
+            <td>7000</td>
+            <td><input type="number" min="0" value="0"></td>
+        </tr>
+        <tr>
+            <td>Mie Instan</td>
+            <td>3000</td>
+            <td><input type="number" min="0" value="0"></td>
+        </tr>
+        <tr>
+            <td>Kopi Sachet</td>
+            <td>2500</td>
+            <td><input type="number" min="0" value="0"></td>
+        </tr>
+        <tr>
+            <td>Teh Celup</td>
+            <td>5000</td>
+            <td><input type="number" min="0" value="0"></td>
+        </tr>
+        <tr>
+            <td>Sabun Mandi</td>
+            <td>4000</td>
+            <td><input type="number" min="0" value="0"></td>
+        </tr>
+        <tr>
+            <td>Shampoo</td>
+            <td>12000</td>
+            <td><input type="number" min="0" value="0"></td>
+        </tr>
+        <tr>
+            <td>Pasta Gigi</td>
+            <td>10000</td>
+            <td><input type="number" min="0" value="0"></td>
+        </tr>
+    </tbody>
+</table>
+
+<button onclick="hitungTotal()">Hitung Total</button>
+
+<h2>Total Harga: Rp <span id="total">0</span></h2>
+
+<button onclick="cetakNota()">Cetak Nota</button>
+
+<script src="script.js"></script>
+</body>
+</html>

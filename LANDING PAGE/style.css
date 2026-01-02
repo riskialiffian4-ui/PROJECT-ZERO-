@@ -1,0 +1,167 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+/* LOADING */
+#loading {
+    background:#000000;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.spinner {
+
+    width: 50px;
+    height: 50px;
+    border: 6px solid #ddd;
+    border-top: 6px solid #e30613;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* CONTENT */
+#content {
+    display: none;
+    text-align: center;
+    padding: 50px;
+}
+
+
+/* NAVBAR */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:#020617;
+}
+
+.logo{
+    color:white;
+}
+.logo span{
+    color:#22c55e;
+}
+
+.menu{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+}
+
+/* HERO */
+.hero{
+    height:90vh;
+    background:linear-gradient( #020617, #0000ff);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:48px;
+}
+
+.hero p{
+    margin:15px 0;
+}
+
+.btn{
+    background:#22c55e;
+    color:black;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+/* FITUR */
+.fitur{
+    padding:60px 40px;
+    text-align:center;
+}
+
+.fitur-box{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    margin-top:30px;
+}
+
+.card{
+    background:#f1f5f9;
+    padding:30px;
+    width:250px;
+    border-radius:8px;
+}
+
+/* HARGA */
+.harga{
+    padding:60px 40px;
+    background:#f8fafc;
+    text-align:center;
+}
+p h3{
+    text-align: left;
+}
+.harga-box{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:30px;
+}
+
+.paket{
+    background:white;
+    padding:30px;
+    width:220px;
+    border-radius:8px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+}
+
+.paket.active{
+    border:2px solid #555555;
+}
+
+.price{
+    font-size:20px;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+/* KONTAK */
+.kontak{
+    padding:60px 40px;
+    text-align:center;
+}
+
+/* FOOTER */
+footer{
+    background:#020617;
+    color:white;
+    text-align:center;
+    padding:15px;
+}

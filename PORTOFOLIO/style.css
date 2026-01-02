@@ -1,0 +1,63 @@
+body{
+	
+	color: white;
+	
+}
+.container{
+	display: flex;
+	background:linear-gradient(blue,purple) ;
+
+
+}
+.foto-wrapper{
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden; /* WAJIB */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid #000; /* bingkai */
+}
+
+.foto-wrapper img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* biar gak gepeng */
+}
+section h2{
+	background: blue;
+}
+/* LOADING */
+#loading{
+  position:fixed;
+  inset:0;
+  background:#020617;
+  color:white;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+}
+
+.foto-loading{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  object-fit:cover;
+  animation: putar 3s linear infinite;
+  border:4px solid #38bdf8;
+  margin-bottom:15px;
+}
+
+@keyframes putar{
+  from{transform:rotate(0deg)}
+  to{transform:rotate(360deg)}
+}
+
+#content{
+  display:none;
+  padding:40px;
+}
